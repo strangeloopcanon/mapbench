@@ -353,6 +353,8 @@ def validate_public_claims(codex: dict[str, Any], gemini: dict[str, Any]) -> Non
     require(codex_primary in readme and gemini_primary in readme, "README primary reliability metric is stale")
     require(codex_mean in readme and gemini_mean in readme, "README headline scores are stale")
     require("The material-error-free rate is the primary metric" in readme, "README metric priority is unclear")
+    require("results/codex-image/contact-sheet.jpg" in readme, "README Codex contact sheet is missing")
+    require("results/gemini-agent-image/contact-sheet.png" in readme, "README Gemini contact sheet is missing")
     require("exploratory diagnostics, not a controlled model ranking" in readme, "README comparison caveat missing")
     codex_report = (ROOT / "results/codex-image/report.md").read_text()
     gemini_report = (ROOT / "results/gemini-agent-image/report.md").read_text()
