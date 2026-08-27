@@ -112,3 +112,5 @@ The prompts, generation records, output hashes, individual judge records, adjudi
 ## License
 
 Code is available under the [MIT License](LICENSE). Original benchmark text, prompts, manifests, reports, and evaluations are available under [CC BY 4.0](LICENSE-DATA.md). Generated images are distributed as benchmark artifacts under the applicable provider terms; this repository does not add a separate license grant for them. Third-party reference maps are not included and remain under the licenses listed on their source pages.
+
+If you want to contribute a model run or help scale MapBench, let me know. I have around a million maps to work through.
