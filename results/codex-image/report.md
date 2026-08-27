@@ -2,14 +2,17 @@
 
 ## Result
 
-Across forty one-shot, text-only map generations, the image model scores **71.11/100** under the MECE v3 map-drawing rubric. The median is **74** and the uncapped raw mean is **81.79**.
+**Only 11 of 40 maps (27.5%) were free of material errors.** The other 29 contained at least one substantive historical, spatial, or coverage error.
+
+The model's secondary capped quality mean is **71.11/100** under the MECE v3 map-drawing rubric. This is not an accuracy percentage or the probability that a map is materially correct. It distinguishes rendering and map quality within reliability categories; material errors impose hard caps.
 
 | Measure | Result |
 | --- | ---: |
+| Material-error-free maps | **11 / 40 (27.5%)** |
+| Maps with material errors | 29 / 40 (72.5%) |
 | Final mean | 71.11 |
 | Final median | 74.00 |
 | Uncapped raw mean | 81.79 |
-| Maps with material errors | 29 / 40 |
 | Independent material errors | 61 |
 | Excellent | 10 / 40 |
 | Good | 1 / 40 |
@@ -94,4 +97,4 @@ Maps tied at 74 or 59 share the same reliability classification. Raw score is on
 
 ## Verdict
 
-The forty-item result supports a stable conclusion: **the model is an excellent map renderer but an unreliable historical cartographer.** One quarter of the maps are excellent with no detected material defect. Nearly three quarters contain at least one substantive historical, spatial, or coverage error, often presented with publication-quality confidence.
+The forty-item result supports a stable conclusion: **the model is an excellent map renderer but an unreliable historical cartographer.** Only 11 of 40 maps have no detected material defect. The other 29 contain at least one substantive historical, spatial, or coverage error, often presented with publication-quality confidence.

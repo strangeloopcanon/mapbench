@@ -43,6 +43,8 @@
     "final_median": 74.0,
     "raw_mean": 81.79,
     "capped_map_count": 29,
+    "material_error_free_count": 11,
+    "material_error_free_percent": 27.5,
     "maps_with_material_errors": 29,
     "material_error_count": 61,
     "material_errors_by_dimension": {

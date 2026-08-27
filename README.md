@@ -10,12 +10,23 @@ The first public release contains 40 prompts spanning the Late Bronze Age throug
 
 ## Results
 
-| Generation system | Final mean | Raw mean | Median | Maps with material errors |
-| --- | ---: | ---: | ---: | ---: |
-| Codex built-in image generator | 71.11 | 81.79 | 74 | 29 of 40 |
-| Gemini 3.7 Flash High via `agy` and `gemini-3.1-flash-image` | 68.20 | 71.75 | 74 | 28 of 40 |
+**Only 11 of 40 Codex maps (27.5%) and 12 of 40 Gemini maps (30.0%) were free of material errors.**
 
-On their respective evaluations, Gemini's raw mean is 10.04 points lower. Its maps often covered the requested subject and looked like finished atlas plates while containing incorrect dates, borders, political classifications, or routes.
+| Generation system | Material-error-free maps | Maps with material errors | Capped quality mean | Raw quality mean |
+| --- | ---: | ---: | ---: | ---: |
+| Codex built-in image generator | **11 of 40 (27.5%)** | 29 of 40 (72.5%) | 71.11 | 81.79 |
+| Gemini 3.7 Flash High via `agy` and `gemini-3.1-flash-image` | **12 of 40 (30.0%)** | 28 of 40 (70.0%) | 68.20 | 71.75 |
+
+The material-error-free rate is the primary metric. The capped quality mean is not a percentage-correct score or the probability that a map is materially correct. It distinguishes an otherwise strong map with one wrong border from a map whose central historical frame fails, while hard caps prevent visual polish from erasing material errors.
+
+| Reliability category | Codex | Gemini |
+| --- | ---: | ---: |
+| No material errors | 11 | 12 |
+| One non-central material error | 11 | 10 |
+| Multiple material errors | 14 | 13 |
+| Central-frame failure | 4 | 5 |
+
+Both systems often covered the requested subject and produced finished-looking atlas plates while containing incorrect dates, borders, political classifications, or routes.
 
 The two runs did not use identical evaluator topologies. The Codex run used Sol Medium and Terra High with Sol High adjudication for substantive disagreement. The Gemini run used Sol High alone. The side-by-side figures are exploratory diagnostics, not a controlled model ranking. A shared blind rescore is required before treating either delta as a model effect.
 
@@ -48,7 +59,7 @@ Material errors cap the final score:
 | Central subject, period, or political frame is wrong | 39 |
 | The requested map is not interpretable | 20 |
 
-This prevents visual polish from compensating for a materially false map. The uncapped raw score remains useful for comparing drawing quality within the same error band.
+This prevents visual polish from compensating for a materially false map. These are quality scores, not accuracy percentages. The uncapped raw score remains useful for comparing drawing quality within the same error band.
 
 Read the complete [v3 rubric](benchmark/rubric.md).
 

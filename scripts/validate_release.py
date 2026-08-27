@@ -191,9 +191,12 @@ def validate_summary(aggregate: dict[str, Any], records: list[dict[str, Any]]) -
     summary = aggregate["summary"]
     totals = [record["total"] for record in records]
     raw_totals = [record["raw_total"] for record in records]
+    material_error_free_count = sum(not record["material_errors"] for record in records)
     require(summary["final_mean"] == rounded(statistics.mean(totals)), "final mean mismatch")
     require(summary["final_median"] == rounded(statistics.median(totals)), "final median mismatch")
     require(summary["raw_mean"] == rounded(statistics.mean(raw_totals)), "raw mean mismatch")
+    require(summary["material_error_free_count"] == material_error_free_count, "material-error-free count mismatch")
+    require(summary["material_error_free_percent"] == rounded(100 * material_error_free_count / len(records)), "material-error-free percentage mismatch")
     require(summary["maps_with_material_errors"] == sum(bool(record["material_errors"]) for record in records), "map error count mismatch")
     require(summary["material_error_count"] == sum(len(record["material_errors"]) for record in records), "material error total mismatch")
     expected_by_dimension = {
@@ -345,9 +348,16 @@ def validate_public_claims(codex: dict[str, Any], gemini: dict[str, Any]) -> Non
     readme = (ROOT / "README.md").read_text()
     codex_mean = f"{codex['summary']['final_mean']:.2f}"
     gemini_mean = f"{gemini['summary']['final_mean']:.2f}"
+    codex_primary = f"{codex['summary']['material_error_free_count']} of 40 Codex maps ({codex['summary']['material_error_free_percent']:.1f}%)"
+    gemini_primary = f"{gemini['summary']['material_error_free_count']} of 40 Gemini maps ({gemini['summary']['material_error_free_percent']:.1f}%)"
+    require(codex_primary in readme and gemini_primary in readme, "README primary reliability metric is stale")
     require(codex_mean in readme and gemini_mean in readme, "README headline scores are stale")
+    require("The material-error-free rate is the primary metric" in readme, "README metric priority is unclear")
     require("exploratory diagnostics, not a controlled model ranking" in readme, "README comparison caveat missing")
+    codex_report = (ROOT / "results/codex-image/report.md").read_text()
     gemini_report = (ROOT / "results/gemini-agent-image/report.md").read_text()
+    require("11 of 40 maps (27.5%) were free of material errors" in codex_report, "Codex report primary metric is stale")
+    require("12 of 40 Gemini maps (30.0%) were free of material errors" in gemini_report, "Gemini report primary metric is stale")
     require("exploratory" in gemini_report.casefold(), "Gemini comparison caveat missing")
 
 

@@ -4,14 +4,17 @@
 
 The comparison with the Codex image run is exploratory because the evaluator topologies differ. The Gemini scores describe this run under its Sol High evaluation; the cross-system deltas do not establish a controlled model ranking.
 
-The Gemini/agy pipeline scores **68.20/100** across the same forty historical-map prompts. The original Codex built-in image-generator run scored **71.11**.
+**Only 12 of 40 Gemini maps (30.0%) were free of material errors.** The other 28 contained at least one substantive factual, spatial, or coverage error. The original Codex run had 11 of 40 error-free maps.
+
+The Gemini/agy pipeline's secondary capped quality mean is **68.20/100**. This is not an accuracy percentage or the probability that a map is materially correct.
 
 | Measure | Gemini/agy | Original image run | Difference |
 | --- | ---: | ---: | ---: |
+| Material-error-free maps | **12 / 40 (30.0%)** | **11 / 40 (27.5%)** | +1 |
+| Maps with material errors | 28 / 40 (70.0%) | 29 / 40 (72.5%) | -1 |
 | Final mean | 68.20 | 71.11 | -2.91 |
 | Raw mean | 71.75 | 81.79 | -10.04 |
 | Final median | 74.00 | 74.00 | +0.00 |
-| Maps with material errors | 28 / 40 | 29 / 40 | -1 |
 
 Gemini scores higher on 12 prompts, ties on 11, and scores lower on 17.
 
