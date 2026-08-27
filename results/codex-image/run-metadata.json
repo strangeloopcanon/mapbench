@@ -1,0 +1,32 @@
+{
+  "benchmark": "MapBench Generation",
+  "version": "0.2.0",
+  "protocol": "subject-prompted-no-reference-generation",
+  "map_count": 40,
+  "cohorts": [
+    {
+      "id_range": ["MB001", "MB020"],
+      "created_at": "2026-08-21T22:00:11-07:00"
+    },
+    {
+      "id_range": ["MB021", "MB040"],
+      "created_at": "2026-08-22T12:04:29-07:00"
+    }
+  ],
+  "generator": {
+    "interface": "Codex built-in image generation tool",
+    "model_id": null,
+    "model_id_note": "The built-in tool did not expose an exact model identifier.",
+    "reference_images_supplied": false,
+    "one_call_per_item": true,
+    "corrective_iterations": 0,
+    "seed": null
+  },
+  "evaluation": {
+    "rubric": "benchmark/rubric.md",
+    "independent_judges": ["World Router Sol Medium", "World Router Terra High"],
+    "adjudicator": "World Router Sol High",
+    "ocr_used": false,
+    "pixel_similarity_used": false
+  }
+}

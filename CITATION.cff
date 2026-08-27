@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use MapBench, please cite this repository."
+title: "MapBench: Historical map generation benchmark"
+type: dataset
+authors:
+  - name: "Strange Loop Canon"
+repository-code: "https://github.com/strangeloopcanon/mapbench"
+version: "0.2.0"
+date-released: "2026-08-27"

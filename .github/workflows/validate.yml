@@ -1,0 +1,29 @@
+name: Validate release
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Run validator tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Validate release artifacts
+        run: python scripts/validate_release.py
+
+      - name: Validate with Python optimization enabled
+        run: PYTHONOPTIMIZE=1 python scripts/validate_release.py

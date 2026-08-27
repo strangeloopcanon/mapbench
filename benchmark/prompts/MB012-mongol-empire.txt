@@ -1,0 +1,8 @@
+Use case: scientific-educational
+Asset type: standalone historical atlas map
+Primary request: Create a new, historically accurate educational map of The Mongol Empire at its greatest extent around 1279, showing the major khanates, important cities, neighboring states, and the principal continental extent.
+Input: no reference image is provided; construct the map from your own historical and geographic knowledge.
+Cartographic requirements: use recognizable real-world geography; accurately place the requested historical extents, borders, regions, routes, movements, and events where relevant; include a clear title and a legend that matches the map.
+Text: use accurate English names and dates; make important labels readable; do not invent places or use garbled pseudo-text.
+Style/medium: an original, professional modern historical-atlas map with top-down cartography, clear boundary linework, restrained color coding, and strong visual hierarchy.
+Constraints: prioritize historical and geographic accuracy over decoration; do not imitate any specific existing map design; no pictorial scenes, ornamental border, or watermark; show the complete map.

@@ -1,0 +1,1617 @@
+{
+  "benchmark": "MapBench Generation 40-item benchmark",
+  "version": "0.2",
+  "rubric_version": "map-drawing-v3",
+  "map_count": 40,
+  "cohort_comparison": {
+    "baseline": {
+      "id_range": [
+        "MB001",
+        "MB020"
+      ],
+      "final_mean": 71.73,
+      "raw_mean": 83.63,
+      "band_counts": {
+        "excellent": 5,
+        "usable_draft": 6,
+        "misleading": 8,
+        "substantive_failure": 1
+      }
+    },
+    "hard_extension": {
+      "id_range": [
+        "MB021",
+        "MB040"
+      ],
+      "final_mean": 70.5,
+      "raw_mean": 79.95,
+      "band_counts": {
+        "excellent": 5,
+        "good": 1,
+        "usable_draft": 5,
+        "misleading": 6,
+        "substantive_failure": 3
+      }
+    },
+    "delta_hard_minus_baseline": {
+      "final_mean": -1.23,
+      "raw_mean": -3.68
+    }
+  },
+  "summary": {
+    "final_mean": 71.11,
+    "final_median": 74.0,
+    "raw_mean": 81.79,
+    "capped_map_count": 29,
+    "maps_with_material_errors": 29,
+    "material_error_count": 61,
+    "material_errors_by_dimension": {
+      "spatial": 10,
+      "factual": 42,
+      "coverage": 9,
+      "legibility": 0
+    },
+    "band_counts": {
+      "excellent": 10,
+      "good": 1,
+      "usable_draft": 11,
+      "misleading": 14,
+      "substantive_failure": 4
+    },
+    "best": {
+      "id": "MB005",
+      "subject": "The Roman Empire at its greatest territorial extent around 117 CE, showing provinces, major cities, neighboring peoples, and frontiers",
+      "total": 100,
+      "raw_total": 100,
+      "band": "excellent"
+    },
+    "worst": {
+      "id": "MB031",
+      "subject": "The Ottoman, Safavid, and Mughal imperial worlds around 1600, showing their actual frontiers, major contested borderlands, neighboring powers, principal cities, and overland connections",
+      "total": 39,
+      "raw_total": 45,
+      "band": "substantive_failure"
+    }
+  },
+  "dimension_means": {
+    "spatial": 4.16,
+    "factual": 3.19,
+    "coverage": 4.35,
+    "legibility": 4.88
+  },
+  "ranking": [
+    {
+      "id": "MB005",
+      "subject": "The Roman Empire at its greatest territorial extent around 117 CE, showing provinces, major cities, neighboring peoples, and frontiers",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 5,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 100,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 100,
+      "material_errors": [],
+      "summary": "An excellent 117 CE Roman map with coherent imperial extent, provinces, cities, neighboring peoples, frontiers, and legend semantics.",
+      "judge_scores": {
+        "sol_medium": 100,
+        "terra_high": 89,
+        "sol_high_adjudicator": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 100,
+        "terra_high": 89,
+        "sol_high_adjudicator": 100
+      },
+      "initial_final_gap": 11,
+      "initial_raw_gap": 11,
+      "band": "excellent",
+      "rank": 1,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB038",
+      "cohort": "hard-extension",
+      "subject": "The partition of British India in 1947, showing the new international boundaries, the princely-state problem, principal migration flows, major affected regions and cities, and the geographic separation of Pakistan's two wings",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 5.0,
+        "factual": 5.0,
+        "coverage": 5.0,
+        "legibility": 4.5
+      },
+      "raw_total": 98.0,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 98.0,
+      "material_errors": [],
+      "summary": "An excellent functional partition map with correct two-wing geography, Radcliffe boundaries, princely-state context, migration directions, affected cities, and a useful scale inset. A complete partition map that communicates the new states, Radcliffe line, princely-state problem, migration directions, and Pakistan's separated wings.",
+      "judge_scores": {
+        "sol_medium": 96,
+        "terra_high": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 96,
+        "terra_high": 100
+      },
+      "initial_final_gap": 4,
+      "initial_raw_gap": 4,
+      "band": "excellent",
+      "rank": 2
+    },
+    {
+      "id": "MB006",
+      "subject": "The major overland and maritime Silk Road routes connecting East Asia, Central Asia, India, the Middle East, East Africa, and Europe",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 5.0,
+        "factual": 4.5,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 97.5,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 97.5,
+      "material_errors": [],
+      "summary": "A comprehensive, spatially coherent, and legible Silk Roads map covering the requested overland and maritime connections. An excellent, immediately decodable Silk Roads map with complete overland and maritime connections across the requested regions.",
+      "judge_scores": {
+        "sol_medium": 95,
+        "terra_high": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 95,
+        "terra_high": 100
+      },
+      "initial_final_gap": 5,
+      "initial_raw_gap": 5,
+      "band": "excellent",
+      "rank": 3,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB028",
+      "cohort": "hard-extension",
+      "subject": "The Indian Ocean trading world around 1450, showing the major commercial regions and ports, monsoon-driven sea routes, strategic straits, and connections among East Africa, the Middle East, South Asia, Southeast Asia, and China",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 5.0,
+        "factual": 4.5,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 97.5,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 97.5,
+      "material_errors": [],
+      "summary": "A complete, coherent, and immediately usable map of the 1450 Indian Ocean system, including ports, straits, commercial regions, and seasonally directed monsoon routes. An effective Indian Ocean map with readable monsoon routes, hubs, straits, and broad commercial regions; some inland political labels compress a fluid 1450 setting.",
+      "judge_scores": {
+        "sol_medium": 100,
+        "terra_high": 95
+      },
+      "judge_raw_scores": {
+        "sol_medium": 100,
+        "terra_high": 95
+      },
+      "initial_final_gap": 5,
+      "initial_raw_gap": 5,
+      "band": "excellent",
+      "rank": 4
+    },
+    {
+      "id": "MB039",
+      "cohort": "hard-extension",
+      "subject": "The decolonization of Africa from 1957 to 1975, showing the chronology of independence, remaining colonial rule, major liberation-war regions, and the changing continental pattern",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 5.0,
+        "factual": 4.5,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 97.5,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 97.5,
+      "material_errors": [],
+      "summary": "A publication-ready decolonization map with accurate country dates, endpoint status, liberation-war regions, chronology, and small multiples; only minor category awkwardness affects pre-1957 context. A strong chronological decolonization map with remaining colonial rule, liberation-war regions, and changing continental pattern all clearly represented.",
+      "judge_scores": {
+        "sol_medium": 95,
+        "terra_high": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 95,
+        "terra_high": 100
+      },
+      "initial_final_gap": 5,
+      "initial_raw_gap": 5,
+      "band": "excellent",
+      "rank": 5
+    },
+    {
+      "id": "MB003",
+      "subject": "Classical Greece and the Aegean around the fifth century BCE, showing major regions, city-states, islands, and neighboring lands",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 5,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 97,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 97,
+      "material_errors": [],
+      "summary": "A highly accurate and readable Classical Greece map with only minor omissions among the many possible secondary regions and city-states.",
+      "judge_scores": {
+        "sol_medium": 100,
+        "terra_high": 84,
+        "sol_high_adjudicator": 97
+      },
+      "judge_raw_scores": {
+        "sol_medium": 100,
+        "terra_high": 84,
+        "sol_high_adjudicator": 97
+      },
+      "initial_final_gap": 16,
+      "initial_raw_gap": 16,
+      "band": "excellent",
+      "rank": 6,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB034",
+      "cohort": "hard-extension",
+      "subject": "The Atlantic Revolutions from roughly 1775 to 1825, showing the principal revolutionary and independence movements, their chronology, major centers, imperial settings, and transatlantic connections",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 4.5,
+        "factual": 5.0,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 96.0,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 96.0,
+      "material_errors": [],
+      "summary": "A comprehensive, well-dated, and readable synthesis of the American, Haitian, Latin American, Brazilian, and European revolutionary movements and their Atlantic connections. A coherent multi-temporal Atlantic map that accurately joins the revolutions, chronology, imperial setting, and transatlantic connections.",
+      "judge_scores": {
+        "sol_medium": 92,
+        "terra_high": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 92,
+        "terra_high": 100
+      },
+      "initial_final_gap": 8,
+      "initial_raw_gap": 8,
+      "band": "excellent",
+      "rank": 7
+    },
+    {
+      "id": "MB035",
+      "cohort": "hard-extension",
+      "subject": "The Indian Rebellion of 1857-1858, showing British-controlled and princely territories, principal centers of rebellion, major campaign movements, cities, rivers, and regions that remained outside the main uprising",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 4.5,
+        "factual": 5.0,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 96.0,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 96.0,
+      "material_errors": [],
+      "summary": "A highly effective operational map of the rebellion, combining territorial status, principal centers, rivers, campaign phases, and unaffected regions without a material defect. A publication-ready rebellion map that clearly distinguishes British and princely territories, revolt centers, campaigns, rivers, and largely unaffected regions.",
+      "judge_scores": {
+        "sol_medium": 92,
+        "terra_high": 100
+      },
+      "judge_raw_scores": {
+        "sol_medium": 92,
+        "terra_high": 100
+      },
+      "initial_final_gap": 8,
+      "initial_raw_gap": 8,
+      "band": "excellent",
+      "rank": 8
+    },
+    {
+      "id": "MB002",
+      "subject": "Ancient Egypt, showing Upper and Lower Egypt, the Nile, major settlements, and surrounding seas and deserts",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 5.0,
+        "factual": 4.0,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 95.0,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 95.0,
+      "material_errors": [],
+      "summary": "A highly usable Ancient Egypt map with correct Nile framing, regions, settlements, seas, deserts, and clear decoding. A highly readable Nile map that fully covers the requested Egyptian regions, settlements, seas, deserts, and physical geography.",
+      "judge_scores": {
+        "sol_medium": 95,
+        "terra_high": 95
+      },
+      "judge_raw_scores": {
+        "sol_medium": 95,
+        "terra_high": 95
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 0,
+      "band": "excellent",
+      "rank": 9,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB010",
+      "subject": "Viking expansion from the eighth through eleventh centuries, showing settlement areas, major raiding and trade routes, and Atlantic exploration",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 4.0,
+        "factual": 5.0,
+        "coverage": 5.0,
+        "legibility": 4.5
+      },
+      "raw_total": 90.0,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 90.0,
+      "material_errors": [],
+      "summary": "A useful Viking expansion map with broad settlement, raid, trade, and Atlantic coverage, though overlapping routes reduce precision and ease of tracing. A clear and comprehensive Viking-expansion map with effective settlement, exploration, raiding, and trade-route treatment.",
+      "judge_scores": {
+        "sol_medium": 88,
+        "terra_high": 92
+      },
+      "judge_raw_scores": {
+        "sol_medium": 88,
+        "terra_high": 92
+      },
+      "initial_final_gap": 4,
+      "initial_raw_gap": 4,
+      "band": "excellent",
+      "rank": 10,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB023",
+      "cohort": "hard-extension",
+      "subject": "The Byzantine-Sasanian War around 620 CE at the height of Sasanian expansion, showing effective control, the remaining Byzantine territories, major campaign areas, cities, and frontiers",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 4,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 84,
+      "cap": 100,
+      "cap_reason": "none",
+      "total": 84,
+      "material_errors": [],
+      "summary": "A strong and readable war map whose occupation and campaign layers are somewhat schematic but do not create a material historical error.",
+      "judge_scores": {
+        "sol_medium": 84,
+        "terra_high": 100,
+        "sol_high_adjudicator": 84
+      },
+      "judge_raw_scores": {
+        "sol_medium": 84,
+        "terra_high": 100,
+        "sol_high_adjudicator": 84
+      },
+      "initial_final_gap": 16,
+      "initial_raw_gap": 16,
+      "band": "good",
+      "rank": 11
+    },
+    {
+      "id": "MB001",
+      "subject": "Eastern Mediterranean and Near East around 1200 BCE, showing the Late Bronze Age powers, Sea Peoples invasions and migrations, and major destroyed cities",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 90,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Urartu is presented as a major ca. 1200 BCE polity even though the Urartian kingdom belongs to the later Iron Age."
+        }
+      ],
+      "summary": "The map is spatially strong, complete, and immediately readable, but its prominent Urartu layer is materially anachronistic.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 92,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 90,
+        "terra_high": 92,
+        "sol_high_adjudicator": 90
+      },
+      "initial_final_gap": 18,
+      "initial_raw_gap": 2,
+      "band": "usable_draft",
+      "rank": 12,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB012",
+      "subject": "The Mongol Empire at its greatest extent around 1279, showing the major khanates, important cities, neighboring states, and the principal continental extent",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 90,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The extent explanation states that the 1279 Mongol Empire reached Indochina, conflating invasion or influence with incorporated territory."
+        }
+      ],
+      "summary": "An exceptionally clear and complete khanate map capped by one materially overstated claim about the empire's southeastern reach.",
+      "judge_scores": {
+        "sol_medium": 92,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 92,
+        "terra_high": 90,
+        "sol_high_adjudicator": 90
+      },
+      "initial_final_gap": 18,
+      "initial_raw_gap": 2,
+      "band": "usable_draft",
+      "rank": 13,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB025",
+      "cohort": "hard-extension",
+      "subject": "East and Central Asia around 750 CE, showing the Tang dynasty, the principal neighboring states and steppe powers, frontier regions, major cities, and long-distance connections",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 90,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The steppe layer presents extinct Eastern and Western Turkic khaganates as contemporary powers around 750; the Second Turkic Khaganate ended in 744 and the Western Turkic realm had fallen much earlier, while the Uyghurs were the relevant successor power."
+        }
+      ],
+      "summary": "Routes and regional coverage are excellent, but one systemic anachronism misstates the principal steppe order in 750.",
+      "judge_scores": {
+        "sol_medium": 87,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 87,
+        "terra_high": 90,
+        "sol_high_adjudicator": 90
+      },
+      "initial_final_gap": 13,
+      "initial_raw_gap": 3,
+      "band": "usable_draft",
+      "rank": 14
+    },
+    {
+      "id": "MB021",
+      "cohort": "hard-extension",
+      "subject": "The Hellenistic world after the Battle of Ipsus around 300 BCE, showing the principal successor kingdoms, contested territories, major cities, and frontiers",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 87,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The eastern Seleucid realm is wrongly partitioned into a fictitious separate 'Kingdom of the Satraps' and an independent Bactria, although Bactria did not secede until the mid-third century BCE."
+        }
+      ],
+      "summary": "The principal western successor kingdoms are mapped clearly, but the invented eastern political partition requires one material correction.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 74,
+        "terra_high": 95,
+        "sol_high_adjudicator": 87
+      },
+      "initial_final_gap": 15,
+      "initial_raw_gap": 21,
+      "band": "usable_draft",
+      "rank": 15
+    },
+    {
+      "id": "MB026",
+      "cohort": "hard-extension",
+      "subject": "Maritime Southeast Asia around 900 CE, showing the principal states and cultural centers, major ports, strategic straits, regional seas, and important maritime connections",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 87,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Central and eastern Java around 900 are given the wrong political identity: the map substitutes the later Janggala/Kahuripan order for the period's Medang or Mataram realm."
+        }
+      ],
+      "summary": "The maritime network, ports, and straits are unusually effective, but Java's principal political layer is displaced by an eleventh-century successor order.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 95,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 71,
+        "terra_high": 95,
+        "sol_high_adjudicator": 87
+      },
+      "initial_final_gap": 36,
+      "initial_raw_gap": 24,
+      "band": "usable_draft",
+      "rank": 16
+    },
+    {
+      "id": "MB032",
+      "cohort": "hard-extension",
+      "subject": "Europe immediately after the Peace of Westphalia in 1648, showing the principal states, the political fragmentation of the Holy Roman Empire, major territorial settlements, recognized independences, and important cities",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 87,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Portugal is marked as an independence recognized or confirmed by the Peace of Westphalia, although Spain recognized Portuguese independence only in 1668 and the 1648 settlement did not establish it."
+        }
+      ],
+      "summary": "The HRE, principal states, and recognized Dutch and Swiss outcomes are clear, but the prominent Portuguese settlement claim is materially false.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 100,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 82,
+        "terra_high": 100,
+        "sol_high_adjudicator": 87
+      },
+      "initial_final_gap": 26,
+      "initial_raw_gap": 18,
+      "band": "usable_draft",
+      "rank": 17
+    },
+    {
+      "id": "MB016",
+      "subject": "Major precolonial African kingdoms and civilizations roughly between 1000 and 1500 CE, showing their approximate extents, major cities, trade centers, and regional geography",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 5,
+        "coverage": 3,
+        "legibility": 5
+      },
+      "raw_total": 86,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "coverage",
+          "description": "The Kingdom of Benin, a principal West African state within the requested 1000-1500 period, is omitted."
+        }
+      ],
+      "summary": "A clear continental survey with strong regional coverage and trade context, capped for omitting Benin; Mali is present in both legend and mapped fill.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 89,
+        "terra_high": 86,
+        "sol_high_adjudicator": 86
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 3,
+      "band": "usable_draft",
+      "rank": 18,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB019",
+      "subject": "Central Europe's railway network in 1866, showing major rail lines, junctions, cities, national boundaries, and surrounding seas",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 4.0,
+        "factual": 5.0,
+        "coverage": 2.0,
+        "legibility": 5.0
+      },
+      "raw_total": 83.0,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "coverage",
+          "description": "A large share of the principal operating railway network is omitted, especially across Austria and the western and central German states."
+        }
+      ],
+      "summary": "A clean map of selected corridors, but too much of Central Europe's major 1866 rail network is absent for the requested account. A very readable selected-route diagram, but too incomplete to serve as a map of the requested railway network.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 83,
+        "terra_high": 83
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 0,
+      "band": "usable_draft",
+      "rank": 19,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB015",
+      "subject": "The principal European voyages of exploration during the fifteenth and sixteenth centuries, including Columbus, da Gama, Cabot, and Magellan, with accurate routes and dates",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 5,
+        "coverage": 3,
+        "legibility": 4
+      },
+      "raw_total": 82,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "coverage",
+          "description": "The Magellan-Elcano circumnavigation lacks the 1521-1522 return leg across the Indian Ocean and around Africa to Spain."
+        }
+      ],
+      "summary": "The named explorers, dates, and existing routes are sound, but the absent Magellan-Elcano return leg leaves a principal voyage incomplete.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 82,
+        "terra_high": 81,
+        "sol_high_adjudicator": 82
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 1,
+      "band": "usable_draft",
+      "rank": 20,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB027",
+      "cohort": "hard-extension",
+      "subject": "Eurasia around 1330 after the fragmentation of the Mongol Empire, showing the principal successor khanates, their frontiers and overlaps, major cities, neighboring powers, and continental routes",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 82,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The White Horde is identified as the 'Orda of Sibir,' conflating Orda's eastern Jochid ulus with a distinct Siberian formation and misnaming a principal Mongol successor."
+        }
+      ],
+      "summary": "The continental khanate, route, and city structure is useful, but the White Horde's political identity requires a material correction.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 74,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 82,
+        "terra_high": 95,
+        "sol_high_adjudicator": 82
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 13,
+      "band": "usable_draft",
+      "rank": 21
+    },
+    {
+      "id": "MB013",
+      "subject": "The spread of the Black Death across Europe and the Mediterranean from 1346 through 1353, showing chronological progression and principal land and maritime transmission routes",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 4
+      },
+      "raw_total": 78,
+      "cap": 74,
+      "cap_reason": "one_material_error",
+      "total": 74,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The Almoravid Empire, which ended in the twelfth century, is labeled as a North African polity on a 1346-1353 map."
+        }
+      ],
+      "summary": "The plague chronology and transmission network are useful and readable, but one conspicuous polity label is roughly two centuries out of period.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 100,
+        "sol_high_adjudicator": 74
+      },
+      "judge_raw_scores": {
+        "sol_medium": 78,
+        "terra_high": 100,
+        "sol_high_adjudicator": 78
+      },
+      "initial_final_gap": 26,
+      "initial_raw_gap": 22,
+      "band": "usable_draft",
+      "rank": 22,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB014",
+      "subject": "Central and southeastern Europe in 1683, showing the Ottoman Empire, its vassal states, the Habsburg lands, neighboring states, and major cities",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 2,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 85,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Transylvania is categorized as a Habsburg vassal in 1683 rather than an Ottoman tributary principality."
+        },
+        {
+          "dimension": "factual",
+          "description": "The label 'Kingdom of Croatia-Slavonia' imports a political unit created in 1868 into the 1683 map."
+        }
+      ],
+      "summary": "The regional construction is excellent, but two wrong political identities make its 1683 account misleading.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 74,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 85,
+        "terra_high": 90,
+        "sol_high_adjudicator": 85
+      },
+      "initial_final_gap": 15,
+      "initial_raw_gap": 5,
+      "band": "misleading",
+      "rank": 23,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB017",
+      "subject": "The Thirteen British Colonies around 1775, showing colonial boundaries, principal cities, neighboring British territories, Indigenous territory, Louisiana, and Spanish possessions",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 2,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 85,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Louisiana is categorized as French territory in 1775 instead of showing the post-1763 Spanish and British political arrangement."
+        },
+        {
+          "dimension": "factual",
+          "description": "Florida is categorized as Spanish territory in 1775 even though Britain controlled East and West Florida from 1763 to 1783."
+        }
+      ],
+      "summary": "The requested regions are present and well placed, but Louisiana and Florida are assigned to the wrong sovereigns.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 74,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 85,
+        "terra_high": 82,
+        "sol_high_adjudicator": 85
+      },
+      "initial_final_gap": 15,
+      "initial_raw_gap": 3,
+      "band": "misleading",
+      "rank": 24,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB030",
+      "cohort": "hard-extension",
+      "subject": "West Africa around 1590 on the eve of the Moroccan invasion of Songhai, showing the principal states, trade cities and routes, the Niger system, Saharan connections, and the invasion corridor",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 2,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 85,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Saint-Louis is shown as a European fort or factory in 1590 although the French settlement was founded in 1659."
+        },
+        {
+          "dimension": "factual",
+          "description": "Dahomey is mapped as an established kingdom in 1590 despite arising only in the early seventeenth century."
+        },
+        {
+          "dimension": "factual",
+          "description": "The coastal political layer invents or territorializes entities such as a unified Kingdom of Sierra Leone and Portuguese Senegambia rather than representing the period's actual polities and limited European footholds."
+        }
+      ],
+      "summary": "Songhai, the Niger, trade routes, and invasion corridor are well drawn, but the wider coastal context contains several independent chronological and political fabrications.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 59,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 74,
+        "terra_high": 90,
+        "sol_high_adjudicator": 85
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 16,
+      "band": "misleading",
+      "rank": 25
+    },
+    {
+      "id": "MB020",
+      "subject": "A political and military map of Europe at the outbreak of World War I in 1914, showing national borders, alliance blocs, major cities, and the principal fronts",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 3,
+        "coverage": 3,
+        "legibility": 5
+      },
+      "raw_total": 84,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Russia is separated from the Triple Entente in the alliance legend even though it was one of that alliance's three principal members."
+        },
+        {
+          "dimension": "coverage",
+          "description": "Independent Albania is omitted from the 1914 Balkan political map."
+        }
+      ],
+      "summary": "The borders and fronts are highly legible, but the alliance semantics and missing Albania make the requested 1914 political account materially incomplete.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 100,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 76,
+        "terra_high": 100,
+        "sol_high_adjudicator": 84
+      },
+      "initial_final_gap": 41,
+      "initial_raw_gap": 24,
+      "band": "misleading",
+      "rank": 26,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB009",
+      "subject": "The geographic extent of the Maya civilization during the Classic period, showing major regions, cities, lowlands, highlands, and surrounding seas",
+      "final_source": "two-judge-mean",
+      "scores": {
+        "spatial": 4.5,
+        "factual": 2.0,
+        "coverage": 5.0,
+        "legibility": 5.0
+      },
+      "raw_total": 81.0,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Mayapan is shown as a city during the 250-900 CE Classic period despite being a major Postclassic foundation."
+        },
+        {
+          "dimension": "factual",
+          "description": "Tulum is presented as a Classic-period city despite its principal urban florescence being Postclassic."
+        }
+      ],
+      "summary": "The Maya geography and regional coverage are excellent, but two prominent Postclassic sites materially falsify the stated period. The regional map is highly readable and geographically useful, but two conspicuous period errors make its Classic-period claims misleading.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 85,
+        "terra_high": 77
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 8,
+      "band": "misleading",
+      "rank": 27,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB018",
+      "subject": "Europe in 1811 at the height of Napoleon's power, showing the French Empire, directly controlled territories, satellite states, allies, and opposing powers",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 2,
+        "coverage": 3,
+        "legibility": 5
+      },
+      "raw_total": 79,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "coverage",
+          "description": "The Duchy of Warsaw, one of Napoleon's principal satellite states in 1811, is omitted."
+        },
+        {
+          "dimension": "factual",
+          "description": "Portugal is categorized as a French ally or satellite rather than an opposing British ally under French invasion."
+        },
+        {
+          "dimension": "factual",
+          "description": "Catalonia is labeled 'Annexed 1812' on a map explicitly framed as mid-1811."
+        },
+        {
+          "dimension": "factual",
+          "description": "North Africa is labeled 'French Algeria' even though the French conquest began only in 1830."
+        }
+      ],
+      "summary": "The map is spatially clear but omits a principal satellite and makes several materially false allegiance and date claims for 1811.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 59,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 79,
+        "terra_high": 77,
+        "sol_high_adjudicator": 79
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 2,
+      "band": "misleading",
+      "rank": 28,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB040",
+      "cohort": "hard-extension",
+      "subject": "The global Cold War around 1962, showing the major alliance systems, aligned and non-aligned states, divided countries, principal military flashpoints, and strategically important overseas positions",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 5,
+        "factual": 2,
+        "coverage": 3,
+        "legibility": 5
+      },
+      "raw_total": 79,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Cuba is colored as a U.S. ally or partner in 1962 despite its close Soviet alignment and role as host of Soviet missiles."
+        },
+        {
+          "dimension": "factual",
+          "description": "Yugoslavia is assigned to the U.S.-aligned category instead of the non-aligned movement it helped lead."
+        },
+        {
+          "dimension": "factual",
+          "description": "Diego Garcia is listed as a British Indian Ocean Territory strategic base in 1962, although BIOT was created in 1965 and the joint base followed later."
+        },
+        {
+          "dimension": "coverage",
+          "description": "The alliance account omits both SEATO and CENTO, two principal treaty systems active in 1962."
+        }
+      ],
+      "summary": "The global layout and flashpoints are readable, but central alignment miscategorizations, an anachronistic base, and omitted treaty systems make the 1962 account misleading.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 59,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 71,
+        "terra_high": 90,
+        "sol_high_adjudicator": 79
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 19,
+      "band": "misleading",
+      "rank": 29
+    },
+    {
+      "id": "MB011",
+      "subject": "Europe and the Near East during the Crusades, 1095–1291, showing the principal Crusader states, neighboring powers, major cities, and expedition routes",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 2,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 77,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The legend's ca. 1187 Crusader-state layer includes the County of Edessa, which ceased to exist in 1144."
+        },
+        {
+          "dimension": "factual",
+          "description": "The same ca. 1187 political layer labels a unified Great Seljuk Empire decades after that imperial structure had fragmented."
+        }
+      ],
+      "summary": "The routes and coverage are strong, but the declared 1187 political layer combines two incompatible historical states.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 92,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 77,
+        "terra_high": 92,
+        "sol_high_adjudicator": 77
+      },
+      "initial_final_gap": 33,
+      "initial_raw_gap": 15,
+      "band": "misleading",
+      "rank": 30,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB007",
+      "subject": "The Mauryan Empire under Ashoka around 250 BCE, showing its territorial extent, major cities, neighboring regions, and important geographic features",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 74,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The Mauryan extent continues through the far southern peninsula and incorporates the Chola and Pandya regions that remained outside Ashoka's empire."
+        },
+        {
+          "dimension": "factual",
+          "description": "The invented label 'LITHUANVIS (Assam)' replaces a real neighboring-region identity in northeastern India."
+        }
+      ],
+      "summary": "The map is complete and legible, but it materially overextends the empire southward and invents a northeastern neighbor.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 84,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 87,
+        "terra_high": 84,
+        "sol_high_adjudicator": 74
+      },
+      "initial_final_gap": 10,
+      "initial_raw_gap": 3,
+      "band": "misleading",
+      "rank": 31,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB022",
+      "cohort": "hard-extension",
+      "subject": "The Roman world during the Crisis of the Third Century around 271 CE, showing the central Roman Empire, major breakaway states, contested regions, frontiers, and principal cities",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 74,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The Palmyrene Empire is drawn without its major Egyptian possession and most of its Asia Minor reach around 271, materially shrinking a principal breakaway state."
+        },
+        {
+          "dimension": "factual",
+          "description": "A separate Kingdom of Odaenathus dated 260-267 is presented as a simultaneous polity in 271 even though the Palmyrene regime succeeded his authority after his death."
+        }
+      ],
+      "summary": "The map is polished and complete in form, but it both truncates Palmyrene control and revives a defunct overlapping polity.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 74,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 82,
+        "terra_high": 94,
+        "sol_high_adjudicator": 74
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 12,
+      "band": "misleading",
+      "rank": 32
+    },
+    {
+      "id": "MB033",
+      "cohort": "hard-extension",
+      "subject": "The global Seven Years' War from 1756 to 1763, showing the alliance system, principal theaters in Europe and overseas, major campaigns and naval connections, and the territories most directly contested",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 74,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The Indian theater divides and fills almost the whole subcontinent as British India or French India, vastly overstating both companies' territorial control during the war."
+        },
+        {
+          "dimension": "factual",
+          "description": "The European chronology says Russia withdrew in 1760-1761 under Empress Elizabeth, although Russia made peace with Prussia in 1762 under Peter III after Elizabeth's death."
+        }
+      ],
+      "summary": "The global theater structure is impressively complete, but a grossly false Indian control map and a central European chronology error require independent corrections.",
+      "judge_scores": {
+        "sol_medium": 74,
+        "terra_high": 95,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 82,
+        "terra_high": 95,
+        "sol_high_adjudicator": 74
+      },
+      "initial_final_gap": 21,
+      "initial_raw_gap": 13,
+      "band": "misleading",
+      "rank": 33
+    },
+    {
+      "id": "MB037",
+      "cohort": "hard-extension",
+      "subject": "The Russian Civil War around 1919, showing Bolshevik-controlled territory, the principal White fronts and other armed movements, foreign intervention zones, major cities, rail corridors, and campaign directions",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 3,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 74,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The U.S. intervention zone is placed south of Manchuria near the Sea of Japan rather than around Vladivostok and the eastern Siberian rail corridor where American forces operated."
+        },
+        {
+          "dimension": "factual",
+          "description": "Yudenich is assigned to the Northern Front even though he commanded the Northwestern Army and its Petrograd offensive, conflating two principal White fronts."
+        }
+      ],
+      "summary": "The control, rail, and campaign framework is strong, but one major intervention is misplaced and one principal White command is misidentified.",
+      "judge_scores": {
+        "sol_medium": 87,
+        "terra_high": 100,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 87,
+        "terra_high": 100,
+        "sol_high_adjudicator": 74
+      },
+      "initial_final_gap": 13,
+      "initial_raw_gap": 13,
+      "band": "misleading",
+      "rank": 34
+    },
+    {
+      "id": "MB008",
+      "subject": "The Han dynasty around 60 BCE, showing its territory, commanderies or major regions, neighboring powers, the Great Wall, and major cities",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 2,
+        "coverage": 5,
+        "legibility": 5
+      },
+      "raw_total": 69,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The administrative layer uses multiple modern or nonexistent Han units, including Hebei, Shandong, Henan, and Jiangxi commanderies."
+        },
+        {
+          "dimension": "spatial",
+          "description": "Yanmen Commandery is placed far west near the Gansu corridor rather than in northern Shanxi."
+        }
+      ],
+      "summary": "The territorial frame is clear, but the requested commandery layer is both materially misidentified and misplaced.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 92,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 69,
+        "terra_high": 92,
+        "sol_high_adjudicator": 69
+      },
+      "initial_final_gap": 33,
+      "initial_raw_gap": 23,
+      "band": "misleading",
+      "rank": 35,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB029",
+      "cohort": "hard-extension",
+      "subject": "The Americas around 1491, showing the principal states and large cultural regions, major urban centers, exchange networks, and the geographic relationships among North America, Mesoamerica, the Caribbean, and South America",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 3,
+        "factual": 2,
+        "coverage": 4,
+        "legibility": 4
+      },
+      "raw_total": 62,
+      "cap": 59,
+      "cap_reason": "two_or_more_material_errors",
+      "total": 59,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "Cahokia and the Mississippian chiefdom complex are moved from the Mississippi Valley to southern Brazil and Paraguay, a transcontinental placement error."
+        },
+        {
+          "dimension": "factual",
+          "description": "The Plains are described as pre-contact horse cultures and include the Comanche in 1491, imposing a post-contact equestrian political order on the requested date."
+        },
+        {
+          "dimension": "factual",
+          "description": "Tiwanaku is presented as a contemporary major center in 1491 although its urban polity had collapsed centuries earlier."
+        }
+      ],
+      "summary": "Broad continental coverage and attractive rendering are undermined by a transcontinental Mississippian error and multiple period-defining anachronisms.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 74,
+        "sol_high_adjudicator": 59
+      },
+      "judge_raw_scores": {
+        "sol_medium": 66,
+        "terra_high": 90,
+        "sol_high_adjudicator": 62
+      },
+      "initial_final_gap": 15,
+      "initial_raw_gap": 24,
+      "band": "misleading",
+      "rank": 36
+    },
+    {
+      "id": "MB036",
+      "cohort": "hard-extension",
+      "subject": "Africa around 1885 at the beginning of the major European partition, distinguishing effective European control from claims or spheres, showing major independent African states, colonial footholds, and contested regions",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 4,
+        "factual": 1,
+        "coverage": 2,
+        "legibility": 4
+      },
+      "raw_total": 59,
+      "cap": 39,
+      "cap_reason": "central_frame_wrong",
+      "total": 39,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "Egypt is encoded as Italian effective control instead of a Khedivate under British occupation, contradicting the map's central control-versus-claim distinction."
+        },
+        {
+          "dimension": "factual",
+          "description": "The Congo Free State is encoded as French effective control and described as a Belgian association rather than Leopold II's separately recognized Congo state."
+        },
+        {
+          "dimension": "coverage",
+          "description": "Germany and its newly declared African colonial possessions or claims are absent from both the legend and map despite being indispensable to an Africa-in-1885 account."
+        },
+        {
+          "dimension": "coverage",
+          "description": "Liberia, one of the principal independent African states in 1885, is omitted from the political layer."
+        }
+      ],
+      "summary": "The map attempts the requested distinction, but misclassifies two defining cases and omits key colonial and independent actors, defeating its central purpose.",
+      "judge_scores": {
+        "sol_medium": 39,
+        "terra_high": 39,
+        "sol_high_adjudicator": 39
+      },
+      "judge_raw_scores": {
+        "sol_medium": 62,
+        "terra_high": 82,
+        "sol_high_adjudicator": 59
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 20,
+      "band": "substantive_failure",
+      "rank": 37
+    },
+    {
+      "id": "MB004",
+      "subject": "The Persian Empire around 1730, showing its territorial extent, major internal regions, neighboring powers, cities, rivers, and seas",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 2,
+        "factual": 1,
+        "coverage": 3,
+        "legibility": 5
+      },
+      "raw_total": 50,
+      "cap": 39,
+      "cap_reason": "central_frame_wrong",
+      "total": 39,
+      "material_errors": [
+        {
+          "dimension": "factual",
+          "description": "The central political frame is wrong: the map calls 1730 Nader Shah's accession and presents the later Afsharid order instead of the requested 1730 situation."
+        },
+        {
+          "dimension": "spatial",
+          "description": "The unified Persian footprint wrongly absorbs Ottoman-held Iraq and projects consolidated control across territories that were outside or contested in 1730."
+        },
+        {
+          "dimension": "coverage",
+          "description": "The Hotaki Afghan power and contested Afghan core, indispensable to the 1730 political situation, are omitted."
+        },
+        {
+          "dimension": "factual",
+          "description": "The neighboring state is anachronistically identified as the Kingdom of Saudi Arabia rather than the period's limited Emirate of Diriyah."
+        }
+      ],
+      "summary": "The drawing is clear, but the ruler, political frame, territorial footprint, and key neighboring context do not describe Persia in 1730.",
+      "judge_scores": {
+        "sol_medium": 39,
+        "terra_high": 39,
+        "sol_high_adjudicator": 39
+      },
+      "judge_raw_scores": {
+        "sol_medium": 80,
+        "terra_high": 50,
+        "sol_high_adjudicator": 50
+      },
+      "initial_final_gap": 0,
+      "initial_raw_gap": 30,
+      "band": "substantive_failure",
+      "rank": 38,
+      "cohort": "baseline"
+    },
+    {
+      "id": "MB024",
+      "cohort": "hard-extension",
+      "subject": "The Islamic world during the Abbasid Revolution around 750 CE, showing the collapsing Umayyad order, emerging Abbasid control, principal regions, campaign movement, major cities, and surviving rivals",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 1,
+        "factual": 1,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 45,
+      "cap": 39,
+      "cap_reason": "central_frame_wrong",
+      "total": 39,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The late-750 Abbasid control fill is confined essentially to Sindh while Khurasan, Iraq, Syria, and nearly the entire overthrown caliphate remain colored Umayyad, reversing the requested transition's central political geography."
+        },
+        {
+          "dimension": "factual",
+          "description": "Tahirid semi-autonomy is dated from 748 and mapped as contemporary, although Tahirid rule in Khurasan began in 821."
+        },
+        {
+          "dimension": "factual",
+          "description": "Baghdad is symbolized as the Abbasid capital in 750 even while the map acknowledges that the city was founded only in 762."
+        },
+        {
+          "dimension": "factual",
+          "description": "Al-Andalus is presented as a separate Umayyad emirate in 750, before Abd al-Rahman established that emirate in 756."
+        }
+      ],
+      "summary": "Arrows and chronology cannot rescue a map whose control layer depicts the Umayyads as still ruling nearly everything and compounds that reversal with several major anachronisms.",
+      "judge_scores": {
+        "sol_medium": 59,
+        "terra_high": 74,
+        "sol_high_adjudicator": 39
+      },
+      "judge_raw_scores": {
+        "sol_medium": 63,
+        "terra_high": 95,
+        "sol_high_adjudicator": 45
+      },
+      "initial_final_gap": 15,
+      "initial_raw_gap": 32,
+      "band": "substantive_failure",
+      "rank": 39
+    },
+    {
+      "id": "MB031",
+      "cohort": "hard-extension",
+      "subject": "The Ottoman, Safavid, and Mughal imperial worlds around 1600, showing their actual frontiers, major contested borderlands, neighboring powers, principal cities, and overland connections",
+      "final_source": "sol-high-adjudication",
+      "scores": {
+        "spatial": 1,
+        "factual": 1,
+        "coverage": 4,
+        "legibility": 5
+      },
+      "raw_total": 45,
+      "cap": 39,
+      "cap_reason": "central_frame_wrong",
+      "total": 39,
+      "material_errors": [
+        {
+          "dimension": "spatial",
+          "description": "The Mughal fill absorbs nearly the entire Deccan and southern peninsula around 1600, erasing still-independent powers including Bijapur and Golconda and grossly overstating Mughal control."
+        },
+        {
+          "dimension": "factual",
+          "description": "Egypt is assigned to a surviving Mamluk Sultanate in 1600 even though the Ottomans ended that sultanate and incorporated Egypt in 1517."
+        },
+        {
+          "dimension": "factual",
+          "description": "The map presents the later Dzungar and Kokand khanates as contemporary neighbors around 1600, although they emerged in the seventeenth and eighteenth centuries respectively."
+        },
+        {
+          "dimension": "spatial",
+          "description": "A broad Safavid-influence zone is drawn across North Africa, far outside any credible Safavid frontier or contested borderland."
+        }
+      ],
+      "summary": "Two imperial footprints and several neighboring-state claims are wrong enough that the otherwise excellent drawing fails as a political map of 1600.",
+      "judge_scores": {
+        "sol_medium": 39,
+        "terra_high": 59,
+        "sol_high_adjudicator": 39
+      },
+      "judge_raw_scores": {
+        "sol_medium": 45,
+        "terra_high": 85,
+        "sol_high_adjudicator": 45
+      },
+      "initial_final_gap": 20,
+      "initial_raw_gap": 40,
+      "band": "substantive_failure",
+      "rank": 40
+    }
+  ]
+}
